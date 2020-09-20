@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/words-self-checker/static/css/main.3a23fd91.chunk.css",
-    "main.js": "/words-self-checker/static/js/main.43eb2420.chunk.js",
-    "main.js.map": "/words-self-checker/static/js/main.43eb2420.chunk.js.map",
+    "main.js": "/words-self-checker/static/js/main.d9bfc832.chunk.js",
+    "main.js.map": "/words-self-checker/static/js/main.d9bfc832.chunk.js.map",
     "runtime-main.js": "/words-self-checker/static/js/runtime-main.92080693.js",
     "runtime-main.js.map": "/words-self-checker/static/js/runtime-main.92080693.js.map",
     "static/js/2.7d449781.chunk.js": "/words-self-checker/static/js/2.7d449781.chunk.js",
     "static/js/2.7d449781.chunk.js.map": "/words-self-checker/static/js/2.7d449781.chunk.js.map",
     "index.html": "/words-self-checker/index.html",
-    "precache-manifest.45e207d273afabe19f266ab90982973a.js": "/words-self-checker/precache-manifest.45e207d273afabe19f266ab90982973a.js",
+    "precache-manifest.5fb97e1707604508ace0a6679c13ee82.js": "/words-self-checker/precache-manifest.5fb97e1707604508ace0a6679c13ee82.js",
     "service-worker.js": "/words-self-checker/service-worker.js",
     "static/css/main.3a23fd91.chunk.css.map": "/words-self-checker/static/css/main.3a23fd91.chunk.css.map",
     "static/js/2.7d449781.chunk.js.LICENSE.txt": "/words-self-checker/static/js/2.7d449781.chunk.js.LICENSE.txt"
@@ -17,6 +17,6 @@
     "static/js/runtime-main.92080693.js",
     "static/js/2.7d449781.chunk.js",
     "static/css/main.3a23fd91.chunk.css",
-    "static/js/main.43eb2420.chunk.js"
+    "static/js/main.d9bfc832.chunk.js"
   ]
 }
