@@ -52,10 +52,10 @@ const WordCell = ({item, answer, onClick}) => {
     <div className="relative inline-block align-middle">
       <div className={`flex items-center m-2 h-24 ${textColor(item)} rounded-lg shadow`} style={{ width: "6.5rem", }} onClick={onClick}>
         <div className="block w-full text-gray-700">
-          <p className="absolute top-0 m-2 text-xs">{item.label}</p>
+          <p className="select-none absolute top-0 m-2 text-xs">{item.label}</p>
           <p className="select-none font-bold text-sm text-center">
             <a className="underline"
-              target="it-word-book"
+              target="words-self-checker"
               href={"https://www.google.com/search?q="+encodeURI(item.word+' プログラミング')}
               onClick={(e) => {
                 e.stopPropagation();
@@ -218,7 +218,7 @@ export default withRouter(function({
   }, [category, localStorageKey]);
 
   const onSelectHandler = (item) => {
-    return () => {
+    return (e) => {
       const a = { ...answer };
       if (!a[item.word]) {
         a[item.word] = 1;
@@ -303,8 +303,8 @@ export default withRouter(function({
           })
         }
       </div>
-      <p className="text-center font-bold text-gray-700 my-4">知っている単語のカードをクリック</p>
-      <div className="grid grid-cols-4 sm:grid-cols-5 md:grid-cols-7 gap-0 justify-items-center">
+      <p className="select-none text-center font-bold text-gray-700 my-4">知っている単語のカードをクリック</p>
+      <div className="grid grid-cols-4 sm:grid-cols-5 md:grid-cols-7 lg:grid-cols-10 gap-0 justify-items-center">
         <WordList
           wordList={wordList}
           category={selectedCategory}
