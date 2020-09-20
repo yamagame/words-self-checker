@@ -5,9 +5,9 @@ import Chart from 'chart.js';
 function Container({title, children, onClickDownload}) {
   return (
     <div className="container mx-auto">
-      <div className="flex items-center justify-between flex-wrap bg-teal-500 p-6">
-        <div className="flex items-center flex-shrink-0 text-white mr-6">
-          <span className="font-semibold text-xl tracking-tight">{title}</span>
+      <div className="flex items-center justify-between flex-wrap bg-teal-500 p-3">
+        <div className="flex items-center flex-shrink-0 text-white bg-teal-500">
+          <span className="font-semibold md:text-xl tracking-tight break-words">{title}</span>
         </div>
         <div className="w-full block flex-grow md:flex md:items-center md:w-auto">
           <div className="text-sm md:flex-grow"></div>
@@ -37,7 +37,7 @@ const CategorySum = ({
     return selectedCategory===category?'text-white bg-blue-500 ':'text-gray-500 bg-transparent';
   }
   return (
-    <div className={`flex text-sm hover:bg-blue-700 hover:text-white text-white font-bold py-1 px-2 rounded ${textColor(category)}`} onClick={onClick}>
+    <div className={`select-none flex text-sm hover:bg-blue-700 hover:text-white text-white font-bold py-1 px-2 rounded ${textColor(category)}`} onClick={onClick}>
       <div className="flex-1 my-2"> {label}:{ wordList.filter( v => v.type === category || category === 'all' ).length } </div>
     </div>
   )
@@ -230,6 +230,11 @@ export default withRouter(function({
     }
   }
 
+  const onSelectCategory = (e) => {
+    setSelectedCategory(e.target.value);
+    e.preventDefault();
+  }
+
   const onSelectCategoryHander = (category) => {
     return () => {
       setSelectedCategory(category);
@@ -272,15 +277,15 @@ export default withRouter(function({
       title={title}
       onClickDownload={onClickDownload}
     >
-      <div className="">
+      <div className="m-screen my-2">
         <canvas
-          className="mx-auto my-10"
+          className="mx-auto"
           ref={canvasEl}
-          width="400"
-          height="400"
+          width="320"
+          height="320"
         ></canvas>
       </div>
-      <div className="flex block my-2 justify-center">
+      <div className="hidden md:flex justify-center my-2">
         <CategorySum
           wordList={wordList}
           label="全て"
@@ -303,8 +308,27 @@ export default withRouter(function({
           })
         }
       </div>
+      <div className="flex justify-center md:hidden">
+        <div className="inline-block relative w-64">
+          <select class="block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline font-bold text-gray-700"
+                  value={selectedCategory} onChange={onSelectCategory}
+          >
+            <option value="all">全て:{ wordList.length }</option>
+            {
+              typeList.map( item => {
+                return (
+                  <option value={item.type}>{item.label}:{ wordList.filter( v => v.type === item.type ).length }</option>
+                )
+              })
+            }
+          </select>
+          <div class="pointer-events-none absolute inset-y-0 right-0 flex items-center px-2 text-gray-700">
+            <svg class="fill-current h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"><path d="M9.293 12.95l.707.707L15.657 8l-1.414-1.414L10 10.828 5.757 6.586 4.343 8z"/></svg>
+          </div>
+        </div>
+      </div>
       <p className="select-none text-center font-bold text-gray-700 my-4">知っている単語のカードをクリック</p>
-      <div className="grid grid-cols-4 sm:grid-cols-5 md:grid-cols-7 lg:grid-cols-10 gap-0 justify-items-center">
+      <div className="grid grid-cols-3 sm:grid-cols-5 md:grid-cols-7 lg:grid-cols-9 xl:grid-cols-10 gap-0 justify-items-center">
         <WordList
           wordList={wordList}
           category={selectedCategory}
