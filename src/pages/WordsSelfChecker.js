@@ -1,5 +1,4 @@
 import React from 'react';
-import { withRouter, } from "react-router-dom";
 import Chart from 'chart.js';
 
 function Container({title, children, onClickDownload}) {
@@ -126,15 +125,12 @@ const calcResult = (w, answer, typeList) => {
   }
 }
 
-export default withRouter(function({
-  history,
+export default function({
   wordList,
   typeList,
   checkerKey,
   title,
-  match,
 }) {
-  const { category } = match.params;
   const [selectedCategory, setSelectedCategory] = React.useState('all');
   const [answer, setAnswer] = React.useState({});
   const canvasEl = React.useRef(null);
@@ -214,8 +210,7 @@ export default withRouter(function({
       setAnswer(a?a:{});
     } catch(err) {
     }
-    setSelectedCategory(category?category:'all');
-  }, [category, localStorageKey]);
+  }, []);
 
   const onSelectHandler = (item) => {
     return (e) => {
@@ -339,4 +334,4 @@ export default withRouter(function({
       </div>
     </Container>
   )
-})
+}

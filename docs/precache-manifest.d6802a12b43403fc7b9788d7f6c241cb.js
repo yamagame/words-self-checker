@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "916d3b94da00e6fe3923931a0ae151c8",
+    "revision": "afd5aa4186db7ad88caa1cb00325d729",
     "url": "/words-self-checker/index.html"
   },
   {
-    "revision": "e7b853bbb93007f5c887",
+    "revision": "1ff4f7d2411ac3b3b21f",
     "url": "/words-self-checker/static/css/main.3a23fd91.chunk.css"
   },
   {
-    "revision": "3c9f7d7e30927500fa99",
-    "url": "/words-self-checker/static/js/2.7d449781.chunk.js"
+    "revision": "a5055698f56348c27ebe",
+    "url": "/words-self-checker/static/js/2.29cccf84.chunk.js"
   },
   {
     "revision": "4acd90554931a5346c73c3af099efcb8",
-    "url": "/words-self-checker/static/js/2.7d449781.chunk.js.LICENSE.txt"
+    "url": "/words-self-checker/static/js/2.29cccf84.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e7b853bbb93007f5c887",
-    "url": "/words-self-checker/static/js/main.d9bfc832.chunk.js"
+    "revision": "1ff4f7d2411ac3b3b21f",
+    "url": "/words-self-checker/static/js/main.094b52cc.chunk.js"
   },
   {
     "revision": "10328da55be669a4f8f3",
