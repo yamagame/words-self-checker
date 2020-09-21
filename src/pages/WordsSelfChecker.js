@@ -1,11 +1,24 @@
 import React from 'react';
 import Chart from 'chart.js';
 
+function CheckMark() {
+  return (
+    <svg width="24px" height="26px" viewBox="-0.5 -0.5 44 51">
+      <path d="M 0.18 34.19 C 0.63 32.5 1.77 31.08 3.31 30.3 C 4.85 29.52 6.64 29.44 8.24 30.09 C 10.57 31.24 12.37 33.26 13.27 35.72 C 17.43 23.7 23.75 12.58 31.91 2.92 C 34.22 0.78 37.46 0 40.47 0.87 C 41.23 0.99 41.89 1.51 42.19 2.24 C 42.5 2.96 42.42 3.8 41.98 4.45 C 30.89 17.2 22.64 32.24 17.81 48.54 C 14.96 50 11.59 50 8.74 48.54 C 6.59 43.67 3.7 39.17 0.18 35.21 C 0 34.89 0 34.5 0.18 34.19 Z"
+        fill="#33A2E9"
+        stroke="#33A2E9"
+        strokeMiterlimit="10"
+        pointerEvents="all"
+      />
+    </svg>
+  )
+}
+
 function Container({title, children, onClickDownload}) {
   return (
     <div className="container mx-auto">
-      <div className="flex items-center justify-between flex-wrap bg-teal-500 p-3">
-        <div className="flex items-center flex-shrink-0 text-white bg-teal-500">
+      <div className="flex items-center justify-between flex-wrap bg-blue-500 p-3">
+        <div className="flex items-center flex-shrink-0 text-white bg-blue-500">
           <span className="font-semibold md:text-xl tracking-tight break-words">{title}</span>
         </div>
         <div className="w-full block flex-grow md:flex md:items-center md:w-auto">
@@ -61,6 +74,11 @@ const WordCell = ({item, answer, onClick}) => {
               }}
             >{ item.word }</a>
           </p>
+          {
+            (answer === 1)?(<p className="select-none absolute bottom-0 right-0 m-4">
+              <CheckMark />
+            </p>):null
+          }
         </div>
       </div>
     </div>
@@ -322,7 +340,7 @@ export default function({
           </div>
         </div>
       </div>
-      <p className="select-none text-center font-bold text-gray-700 my-4">知っている単語のカードをクリック</p>
+      <p className="select-none text-center font-bold text-gray-700 my-4">知っている単語のカードをクリックしてチェック！</p>
       <div className="grid grid-cols-3 sm:grid-cols-5 md:grid-cols-7 lg:grid-cols-9 xl:grid-cols-10 gap-0 justify-items-center">
         <WordList
           wordList={wordList}
