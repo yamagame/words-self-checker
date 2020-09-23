@@ -1,8 +1,8 @@
 import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Switch, Link, } from "react-router-dom";
-import TypeList from './TypeList';
-import WordList from './WordList';
+import TypeList from './TypeList.json';
+import WordList from './WordList.json';
 import WordsSelfChecker from './pages/WordsSelfChecker';
 
 function App() {
