@@ -1,0 +1,132 @@
+[
+  {
+    "word": ".NET Core",
+    "type": "lang"
+  },
+  {
+    "word": "AWS",
+    "type": "cloud"
+  },
+  {
+    "word": "AngularJS",
+    "type": "front"
+  },
+  {
+    "word": "Apache Spark",
+    "type": "back"
+  },
+  {
+    "word": "Atom",
+    "type": "tool"
+  },
+  {
+    "word": "Babel",
+    "type": "lang"
+  },
+  {
+    "word": "Backbone.js",
+    "type": "front"
+  },
+  {
+    "word": "CSS",
+    "type": "lang"
+  },
+  {
+    "word": "Django",
+    "type": "framework"
+  },
+  {
+    "word": "Docker",
+    "type": "tool"
+  },
+  {
+    "word": "Express",
+    "type": "back"
+  },
+  {
+    "word": "GCP",
+    "type": "cloud"
+  },
+  {
+    "word": "Golang",
+    "type": "lang"
+  },
+  {
+    "word": "HTML",
+    "type": "lang"
+  },
+  {
+    "word": "Java",
+    "type": "lang"
+  },
+  {
+    "word": "JavaScript",
+    "type": "lang"
+  },
+  {
+    "word": "Microsoft Azure",
+    "type": "cloud"
+  },
+  {
+    "word": "Microsoft SQL Server",
+    "type": "back"
+  },
+  {
+    "word": "MySQL",
+    "type": "back"
+  },
+  {
+    "word": "Node.js",
+    "type": "lang",
+    "url": "https://nodejs.org/"
+  },
+  {
+    "word": "PHP",
+    "type": "lang"
+  },
+  {
+    "word": "Perl",
+    "type": "lang"
+  },
+  {
+    "word": "PostgreSQL",
+    "type": "back"
+  },
+  {
+    "word": "Python",
+    "type": "lang"
+  },
+  {
+    "word": "React",
+    "type": "front"
+  },
+  {
+    "word": "Ruby on Rails",
+    "type": "framework"
+  },
+  {
+    "word": "Spring Boot",
+    "type": "framework"
+  },
+  {
+    "word": "TypeScript",
+    "type": "lang"
+  },
+  {
+    "word": "Visual Studio Code",
+    "type": "tool"
+  },
+  {
+    "word": "Vue.js",
+    "type": "front"
+  },
+  {
+    "word": "W3C",
+    "type": "basic",
+    "url": "https://www.w3.org/"
+  },
+  {
+    "word": "Webフレームワーク",
+    "type": "framework"
+  }
+]

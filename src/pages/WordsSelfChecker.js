@@ -1,12 +1,12 @@
 import React from 'react';
 import Chart from 'chart.js';
 
-function CheckMark() {
+function CheckMark({colors}) {
   return (
     <svg width="24px" height="26px" viewBox="-0.5 -0.5 44 51">
       <path d="M 0.18 34.19 C 0.63 32.5 1.77 31.08 3.31 30.3 C 4.85 29.52 6.64 29.44 8.24 30.09 C 10.57 31.24 12.37 33.26 13.27 35.72 C 17.43 23.7 23.75 12.58 31.91 2.92 C 34.22 0.78 37.46 0 40.47 0.87 C 41.23 0.99 41.89 1.51 42.19 2.24 C 42.5 2.96 42.42 3.8 41.98 4.45 C 30.89 17.2 22.64 32.24 17.81 48.54 C 14.96 50 11.59 50 8.74 48.54 C 6.59 43.67 3.7 39.17 0.18 35.21 C 0 34.89 0 34.5 0.18 34.19 Z"
-        fill="#33A2E9"
-        stroke="#33A2E9"
+        fill={colors.checkMark}
+        stroke={colors.checkMark}
         strokeMiterlimit="10"
         pointerEvents="all"
       />
@@ -14,11 +14,16 @@ function CheckMark() {
   )
 }
 
-function Container({title, children, onClickDownload}) {
+function Container({
+  title,
+  children,
+  onClickDownload,
+  colors,
+}) {
   return (
     <div className="container mx-auto">
-      <div className="flex items-center justify-between flex-wrap bg-blue-500 p-3">
-        <div className="flex items-center flex-shrink-0 text-white bg-blue-500">
+      <div className={`flex items-center justify-between flex-wrap ${colors.headerBG} p-3`}>
+        <div className={`flex items-center flex-shrink-0 text-white`}>
           <span className="font-semibold md:text-xl tracking-tight break-words">{title}</span>
         </div>
         <div className="w-full block flex-grow md:flex md:items-center md:w-auto">
@@ -44,20 +49,27 @@ const CategorySum = ({
   category,
   onClick,
   selectedCategory,
+  colors,
 }) => {
   const textColor = (category) => {
-    return selectedCategory===category?'text-white bg-blue-500 ':'text-gray-500 bg-transparent';
+    return selectedCategory===category?`text-white ${colors.selectBG}`:'text-gray-500 bg-transparent';
   }
   return (
-    <div className={`select-none flex text-sm hover:bg-blue-700 hover:text-white text-white font-bold py-1 px-2 rounded ${textColor(category)}`} onClick={onClick}>
+    <div className={`select-none flex text-sm hover:${colors.selectBG} hover:text-white text-white font-bold py-1 px-2 rounded ${textColor(category)}`} onClick={onClick}>
       <div className="flex-1 my-2"> {label}:{ wordList.filter( v => v.type === category || category === 'all' ).length } </div>
     </div>
   )
 }
 
-const WordCell = ({item, answer, onClick}) => {
+const WordCard = ({
+  item,
+  answer,
+  onClick,
+  colors,
+  subkeyword,
+}) => {
   const textColor = (category) => {
-    if (answer === 1) return 'bg-blue-200';
+    if (answer === 1) return colors.cardBG;
     return 'bg-gray-200';
   }
   return (
@@ -68,7 +80,7 @@ const WordCell = ({item, answer, onClick}) => {
           <p className="select-none font-bold text-sm text-center">
             <a className="underline"
               target="words-self-checker"
-              href={"https://www.google.com/search?q="+encodeURI(item.word+' プログラミング')}
+              href={item.url?item.url:"https://www.google.com/search?q="+encodeURI(item.word+` ${subkeyword}`)}
               onClick={(e) => {
                 e.stopPropagation();
               }}
@@ -76,7 +88,7 @@ const WordCell = ({item, answer, onClick}) => {
           </p>
           {
             (answer === 1)?(<p className="select-none absolute bottom-0 right-0 m-4">
-              <CheckMark />
+              <CheckMark colors={colors} />
             </p>):null
           }
         </div>
@@ -91,6 +103,8 @@ const WordList = ({
   category,
   categoryLabels,
   onSelectHandler,
+  colors,
+  subkeyword,
 }) => {
   return (
     <>
@@ -106,11 +120,13 @@ const WordList = ({
         const item = { ...v };
         item.label = categoryLabels[item.type];
         return (
-          <WordCell
+          <WordCard
             key={i}
             item={item}
             answer={answer[v.word]}
             onClick={onSelectHandler(v)}
+            colors={colors}
+            subkeyword={subkeyword}
           />
         )
       })
@@ -148,6 +164,13 @@ export default function({
   typeList,
   checkerKey,
   title,
+  colors= {
+    cardBG: 'bg-blue-200',
+    headerBG: 'bg-blue-500',
+    selectBG: 'bg-blue-500',
+    checkMark: '#4299E1',
+  },
+  subkeyword="プログラミング",
 }) {
   const [selectedCategory, setSelectedCategory] = React.useState('all');
   const [answer, setAnswer] = React.useState({});
@@ -289,6 +312,7 @@ export default function({
     <Container
       title={title}
       onClickDownload={onClickDownload}
+      colors={colors}
     >
       <div className="m-screen my-2">
         <canvas
@@ -305,6 +329,7 @@ export default function({
           category="all"
           selectedCategory={selectedCategory}
           onClick={onSelectCategoryHander('all')}
+          colors={colors}
         />
         {
           typeList.map( item => {
@@ -316,6 +341,7 @@ export default function({
                 category={item.type}
                 selectedCategory={selectedCategory}
                 onClick={onSelectCategoryHander(item.type)}
+                colors={colors}
               />
             )
           })
@@ -348,6 +374,8 @@ export default function({
           categoryLabels={typeList.reduce((a, c) => {a[c.type] = c.label;return a;}, {})}
           answer={answer}
           onSelectHandler={onSelectHandler}
+          colors={colors}
+          subkeyword={subkeyword}
         />
       </div>
     </Container>

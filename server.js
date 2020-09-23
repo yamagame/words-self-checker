@@ -5,11 +5,15 @@ const path = require('path');
 const app = express()
 const port = 8001
 
-const TypeDataPath = path.join(__dirname, 'data', 'TypeList.json');
-const WordDataPath = path.join(__dirname, 'data', 'WordList.json');
-const WordPath = path.join(__dirname, 'data', 'Words.txt');
+const Categories = function(category) {
+  return {
+    TypeDataPath: path.join(__dirname, 'data', category, 'TypeList.json'),
+    WordDataPath: path.join(__dirname, 'data', category, 'WordList.json'),
+    WordPath: path.join(__dirname, 'data', category, 'Words.txt'),
+  }
+}
 
-const loadWords = () => {
+const loadWords = (WordDataPath, WordPath) => {
   function katakanaToHiragana(src) {
     return src.replace(/[\u30a1-\u30f6]/g, function (match) {
       var chr = match.charCodeAt(0) - 0x60;
@@ -48,18 +52,21 @@ const loadWords = () => {
   return newWord;
 }
 
-app.post('/typeData', (req, res) => {
-  const typeData = JSON.parse(fs.readFileSync(TypeDataPath).toString());
+app.post('/typeData/:category', (req, res) => {
+  const { category } = req.params;
+  const typeData = JSON.parse(fs.readFileSync(Categories(category).TypeDataPath).toString());
   res.json(typeData);
 })
 
-app.post('/wordData', (req, res) => {
-  const wordData = loadWords();
+app.post('/wordData/:category', (req, res) => {
+  const { category } = req.params;
+  const wordData = loadWords(Categories(category).WordDataPath, Categories(category).WordPath);
   res.json(wordData);
 })
 
-app.post('/wordType/:word/:type', (req, res) => {
-  const wordData = loadWords();
+app.post('/wordType/:category/:word/:type', (req, res) => {
+  const { category } = req.params;
+  const wordData = loadWords(Categories(category).WordDataPath, Categories(category).WordPath);
   wordData.some( w => {
     if (w.word === req.params.word) {
       w.type = req.params.type;
@@ -67,7 +74,7 @@ app.post('/wordType/:word/:type', (req, res) => {
     }
     return false;
   });
-  fs.writeFileSync(WordDataPath, JSON.stringify(wordData, null, '  '));
+  fs.writeFileSync(Categories(category).WordDataPath, JSON.stringify(wordData, null, '  '));
   res.sendStatus(200);
 })
 

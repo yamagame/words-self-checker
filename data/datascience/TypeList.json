@@ -1,0 +1,7 @@
+[
+  { "label": "一般", "type": "general" },
+  { "label": "基礎", "type": "basic" },
+  { "label": "数学", "type": "math" },
+  { "label": "回帰", "type": "regres" },
+  { "label": "分類", "type": "class" }
+]

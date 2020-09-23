@@ -1,0 +1,32 @@
+W3C
+Node.js
+PHP
+Python
+Perl
+Golang
+Java
+JavaScript
+HTML
+CSS
+Webフレームワーク
+React
+AngularJS
+Vue.js
+Django
+Ruby on Rails
+Apache Spark
+Spring Boot
+Express
+.NET Core
+Backbone.js
+MySQL
+PostgreSQL
+Microsoft SQL Server
+Visual Studio Code
+Atom
+TypeScript
+Babel
+Docker
+AWS
+Microsoft Azure
+GCP

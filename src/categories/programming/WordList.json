@@ -8,10 +8,6 @@
     "type": "basic"
   },
   {
-    "word": "API",
-    "type": "lang"
-  },
-  {
     "word": "ARP",
     "type": "net"
   },
@@ -45,7 +41,7 @@
   },
   {
     "word": "CG",
-    "type": "basic"
+    "type": "general"
   },
   {
     "word": "CGI",
@@ -108,10 +104,6 @@
     "type": "web"
   },
   {
-    "word": "DSP",
-    "type": "embed"
-  },
-  {
     "word": "DoS攻撃",
     "type": "web"
   },
@@ -150,10 +142,6 @@
   {
     "word": "HDD",
     "type": "basic"
-  },
-  {
-    "word": "HDL",
-    "type": "embed"
   },
   {
     "word": "HTML",
@@ -286,10 +274,6 @@
   {
     "word": "RAM",
     "type": "basic"
-  },
-  {
-    "word": "REPL",
-    "type": "lang"
   },
   {
     "word": "RFC",
@@ -816,10 +800,6 @@
     "type": "web"
   },
   {
-    "word": "インターバル",
-    "type": "general"
-  },
-  {
     "word": "インデックス",
     "type": "data"
   },
@@ -1006,10 +986,6 @@
   {
     "word": "オーセンティケーション",
     "type": "web"
-  },
-  {
-    "word": "オートマトン",
-    "type": "basic"
   },
   {
     "word": "オーバーフロー",
@@ -1224,10 +1200,6 @@
     "type": "embed"
   },
   {
-    "word": "クロック",
-    "type": "embed"
-  },
-  {
     "word": "クロックサイクル",
     "type": "embed"
   },
@@ -1274,10 +1246,6 @@
   {
     "word": "ゲッターメソッド",
     "type": "lang"
-  },
-  {
-    "word": "ゲート",
-    "type": "embed"
   },
   {
     "word": "ゲートウェイ",
@@ -1584,10 +1552,6 @@
     "type": "basic"
   },
   {
-    "word": "シャローコピー",
-    "type": "lang"
-  },
-  {
     "word": "ショートカット",
     "type": "general"
   },
@@ -1721,10 +1685,6 @@
   },
   {
     "word": "ステート",
-    "type": "basic"
-  },
-  {
-    "word": "ステートマシン",
     "type": "basic"
   },
   {
@@ -1884,10 +1844,6 @@
     "type": "general"
   },
   {
-    "word": "ソリューション",
-    "type": "general"
-  },
-  {
     "word": "ソーシャルメディア",
     "type": "web"
   },
@@ -2004,10 +1960,6 @@
     "type": "general"
   },
   {
-    "word": "ツール",
-    "type": "general"
-  },
-  {
     "word": "ツールチェーン",
     "type": "embed"
   },
@@ -2080,20 +2032,12 @@
     "type": "lang"
   },
   {
-    "word": "ディレイ",
-    "type": "general"
-  },
-  {
     "word": "ディレクティブ",
     "type": "lang"
   },
   {
     "word": "ディレクトリ",
     "type": "general"
-  },
-  {
-    "word": "ディープコピー",
-    "type": "lang"
   },
   {
     "word": "デコード",
@@ -2138,10 +2082,6 @@
   {
     "word": "デプロイ",
     "type": "basic"
-  },
-  {
-    "word": "デメリット",
-    "type": "general"
   },
   {
     "word": "デモ",
@@ -2740,10 +2680,6 @@
     "type": "web"
   },
   {
-    "word": "フロー",
-    "type": "general"
-  },
-  {
     "word": "ブックマーク",
     "type": "web"
   },
@@ -3092,10 +3028,6 @@
     "type": "os"
   },
   {
-    "word": "マイクロサービス",
-    "type": "general"
-  },
-  {
     "word": "マイクロプロセッサ",
     "type": "embed"
   },
@@ -3250,10 +3182,6 @@
   {
     "word": "メモリ保護",
     "type": "os"
-  },
-  {
-    "word": "メリット",
-    "type": "general"
   },
   {
     "word": "メンバ変数",
@@ -3420,10 +3348,6 @@
     "type": "basic"
   },
   {
-    "word": "リセット",
-    "type": "embed"
-  },
-  {
     "word": "リゾルバ",
     "type": "net"
   },
@@ -3528,10 +3452,6 @@
     "type": "basic"
   },
   {
-    "word": "ルップアックテーブル",
-    "type": "basic"
-  },
-  {
     "word": "ルビ",
     "type": "general"
   },
@@ -3558,10 +3478,6 @@
   {
     "word": "ループ",
     "type": "lang"
-  },
-  {
-    "word": "レイテンシ",
-    "type": "embed"
   },
   {
     "word": "レコード",
@@ -3736,18 +3652,6 @@
     "type": "lang"
   },
   {
-    "word": "保全性",
-    "type": "general"
-  },
-  {
-    "word": "保守性",
-    "type": "general"
-  },
-  {
-    "word": "信頼性",
-    "type": "general"
-  },
-  {
     "word": "全加算器",
     "type": "basic"
   },
@@ -3808,10 +3712,6 @@
     "type": "basic"
   },
   {
-    "word": "単一障害点",
-    "type": "general"
-  },
-  {
     "word": "単項演算子",
     "type": "lang"
   },
@@ -3826,10 +3726,6 @@
   {
     "word": "反変性",
     "type": "lang"
-  },
-  {
-    "word": "可用性",
-    "type": "general"
   },
   {
     "word": "否定",
@@ -3856,10 +3752,6 @@
     "type": "data"
   },
   {
-    "word": "安全性",
-    "type": "general"
-  },
-  {
     "word": "定数",
     "type": "data"
   },
@@ -3869,14 +3761,6 @@
   },
   {
     "word": "実装",
-    "type": "general"
-  },
-  {
-    "word": "平均修理時間",
-    "type": "general"
-  },
-  {
-    "word": "平均故障間隔",
     "type": "general"
   },
   {
@@ -4030,10 +3914,6 @@
   {
     "word": "秘密鍵暗号",
     "type": "basic"
-  },
-  {
-    "word": "稼働率",
-    "type": "general"
   },
   {
     "word": "算術演算子",

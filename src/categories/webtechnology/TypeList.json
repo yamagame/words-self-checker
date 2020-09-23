@@ -1,0 +1,30 @@
+[
+  {
+    "label": "基礎",
+    "type": "basic"
+  },
+  {
+    "label": "言語",
+    "type": "lang"
+  },
+  {
+    "label": "バックエンド",
+    "type": "back"
+  },
+  {
+    "label": "フロント",
+    "type": "front"
+  },
+  {
+    "label": "フレームワーク",
+    "type": "framework"
+  },
+  {
+    "label": "クラウド",
+    "type": "cloud"
+  },
+  {
+    "label": "ツール",
+    "type": "tool"
+  }
+]
