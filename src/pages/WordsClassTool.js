@@ -1,5 +1,5 @@
 import React from 'react';
-import axios from 'axios';
+import storage from '../Storage';
 
 const WordCell = ({
   item,
@@ -136,11 +136,11 @@ export default function({
   }, [wordType]);
 
   const loadTypeData = async () => {
-    const list = await axios.post(`/typeData/${category}`);
+    const list = await storage.loadTypeData(category);
     setTypeData(list.data);
   }
   const loadWordData = async () => {
-    const list = await axios.post(`/wordData/${category}`);
+    const list = await storage.loadWordData(category);
     setWordData(list.data);
   }
   const setWordType = async (word, type) => {
@@ -153,7 +153,7 @@ export default function({
       return false;
     })
     setWordData(w);
-    axios.post(`/wordType/${category}/${encodeURIComponent(word)}/${type}`).then();
+    await storage.saveWordType(category, word, type);
   }
 
   React.useEffect(() => {
