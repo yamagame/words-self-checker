@@ -1,18 +1,26 @@
 import React from 'react';
 import './App.css';
 import { BrowserRouter as Router, Route, Switch, withRouter, } from "react-router-dom";
-import ProgrammingTypeList from './categories/programming/TypeList.json';
-import ProgrammingWordList from './categories/programming/WordList.json';
-import DataScienceTypeList from './categories/datascience/TypeList.json';
-import DataScienceWordList from './categories/datascience/WordList.json';
-import WebTechTypeList from './categories/webtechnology/TypeList.json';
-import WebTechWordList from './categories/webtechnology/WordList.json';
 import WordsClassTool  from './pages/WordsClassTool';
 import WordsSelfChecker from './pages/WordsSelfChecker';
+import Storage from './Storage';
 
 const ToolPage = withRouter(WordsClassTool);
 
 function App() {
+  const [programmingData, setProgrammingData] = React.useState({type: [], word: []});
+  const [datascienceData, setDatascienceData] = React.useState({type: [], word: []});
+  const [webtechnologyData, setWebtechnologyData] = React.useState({type: [], word: []});
+
+  React.useEffect(() => {
+    async function loadData() {
+      setProgrammingData(await Storage.loadCheckerData('programming'));
+      setDatascienceData(await Storage.loadCheckerData('datascience'));
+      setWebtechnologyData(await Storage.loadCheckerData('webtechnology'));
+    }
+    loadData();
+  }, []);
+  
   return (
     <Router>
       <Switch>
@@ -57,8 +65,8 @@ function App() {
           <WordsSelfChecker
             title="DATASCIENCE WORDS SELF CHECKER"
             checkerKey="DSSC"
-            wordList={DataScienceWordList}
-            typeList={DataScienceTypeList}
+            wordList={datascienceData.word}
+            typeList={datascienceData.type}
             colors={{
               cardBG: 'bg-green-200',
               headerBG: 'bg-green-500',
@@ -72,8 +80,8 @@ function App() {
           <WordsSelfChecker
             title="WEBTECH WORDS SELF CHECKER"
             checkerKey="WTSC"
-            wordList={WebTechWordList}
-            typeList={WebTechTypeList}
+            wordList={webtechnologyData.word}
+            typeList={webtechnologyData.type}
             colors={{
               cardBG: 'bg-orange-200',
               headerBG: 'bg-orange-500',
@@ -87,8 +95,8 @@ function App() {
           <WordsSelfChecker
             title="PROGRAMMING WORDS SELF CHECKER"
             checkerKey="PWSC"
-            wordList={ProgrammingWordList}
-            typeList={ProgrammingTypeList}
+            wordList={programmingData.word}
+            typeList={programmingData.type}
             subkeyword="プログラミング"
           />
         </Route>

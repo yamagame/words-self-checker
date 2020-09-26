@@ -78,7 +78,7 @@ const TypeList = ({
   colors,
 }) => {
   return (
-    <div className="hidden md:flex justify-center my-2">
+    <div className="flex justify-center my-2">
       <CategorySum
         wordList={wordList}
         label="全て"
@@ -136,12 +136,12 @@ export default function({
   }, [wordType]);
 
   const loadTypeData = async () => {
-    const list = await storage.loadTypeData(category);
-    setTypeData(list.data);
+    const list = await storage.loadType(category);
+    setTypeData(list);
   }
   const loadWordData = async () => {
-    const list = await storage.loadWordData(category);
-    setWordData(list.data);
+    const list = await storage.loadWord(category);
+    setWordData(list);
   }
   const setWordType = async (word, type) => {
       const w = [ ...wordData ];
@@ -172,6 +172,8 @@ export default function({
       e.preventDefault();
     }
   }
+
+  console.log(typeData);
 
   return (
     <>
