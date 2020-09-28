@@ -22,7 +22,7 @@ function Container({
 }) {
   return (
     <div className="container mx-auto">
-      <div className={`flex items-center justify-between flex-wrap ${colors.headerBG} p-3`}>
+      <div className={`flex items-center justify-between flex-wrap bg-${colors.header} p-3`}>
         <div className={`flex items-center flex-shrink-0 text-white`}>
           <span className="font-semibold md:text-xl tracking-tight break-words">{title}</span>
         </div>
@@ -52,10 +52,10 @@ const CategorySum = ({
   colors,
 }) => {
   const textColor = (category) => {
-    return selectedCategory===category?`text-white ${colors.selectBG}`:'text-gray-500 bg-transparent';
+    return selectedCategory===category?`text-white bg-${colors.select}`:'text-gray-500 bg-transparent';
   }
   return (
-    <div className={`select-none flex text-sm hover:${colors.selectBG} hover:text-white text-white font-bold py-1 px-2 rounded ${textColor(category)}`} onClick={onClick}>
+    <div className={`select-none flex text-sm hover:bg-${colors.select} hover:text-white text-white font-bold py-1 px-2 rounded ${textColor(category)}`} onClick={onClick}>
       <div className="flex-1 my-2"> {label}:{ wordList.filter( v => v.type === category || category === 'all' ).length } </div>
     </div>
   )
@@ -67,14 +67,20 @@ const WordCard = ({
   onClick,
   colors,
   subkeyword,
+  selected,
 }) => {
-  const textColor = (category) => {
-    if (answer === 1) return colors.cardBG;
+  const textColor = () => {
+    if (answer === 1) return `bg-${colors.card}`;
     return 'bg-gray-200';
+  }
+  const selectColor = () => {
+    if (selected) return `border-${colors.select}`;
+    if (answer === 1) return `border-${colors.card}`;
+    return 'border-gray-200';
   }
   return (
     <div className="relative inline-block align-middle">
-      <div className={`flex items-center m-2 h-24 ${textColor(item)} rounded-lg shadow`} style={{ width: "6.5rem", }} onClick={onClick}>
+      <div className={`${selectColor()} border-4 flex items-center m-2 h-24 ${textColor()} rounded-lg shadow`} style={{ width: "6.5rem", }} onClick={onClick}>
         <div className="block w-full text-gray-700">
           <p className="select-none absolute top-0 m-2 text-xs">{item.label}</p>
           <p className="select-none font-bold text-sm text-center">
@@ -105,28 +111,23 @@ const WordList = ({
   onSelectHandler,
   colors,
   subkeyword,
+  selectedCard,
 }) => {
   return (
     <>
     {
-      wordList.filter(v => {
-        if (category === 'null') {
-            return (typeof(v.type) === 'undefined')
-        }
-        if (category === 'all') return true;
-        if (category === v.type) return true;
-        return false;
-      }).map( (v, i) => {
+      wordList.map( (v, i) => {
         const item = { ...v };
         item.label = categoryLabels[item.type];
         return (
           <WordCard
-            key={i}
+            key={v.word}
             item={item}
             answer={answer[v.word]}
             onClick={onSelectHandler(v)}
             colors={colors}
             subkeyword={subkeyword}
+            selected={selectedCard==v.word}
           />
         )
       })
@@ -165,18 +166,21 @@ export default function({
   checkerKey,
   title,
   colors= {
-    cardBG: 'bg-blue-200',
-    headerBG: 'bg-blue-500',
-    selectBG: 'bg-blue-500',
+    card: 'blue-200',
+    header: 'blue-500',
+    select: 'blue-500',
     checkMark: '#4299E1',
   },
   subkeyword="プログラミング",
 }) {
   const [selectedCategory, setSelectedCategory] = React.useState('all');
+  const [selectedCard, setSelectedCard] = React.useState(null);
+  const [filteredWordList, setFilteredWordList] = React.useState([]);
   const [answer, setAnswer] = React.useState({});
   const canvasEl = React.useRef(null);
   const chartRef = React.useRef(null);
   const localStorageKey = `self-checker-answer:${checkerKey}`;
+  const renderTimeout = React.useRef(null);
 
   const updateChart = (answer, wordList, typeList) => {
     const ctx = canvasEl.current.getContext('2d');
@@ -241,8 +245,36 @@ export default function({
     });
   }
 
+  const checkWord = (word) => {
+    const a = { ...answer };
+    if (!a[word]) {
+      a[word] = 1;
+    } else {
+      a[word] = 0;
+    }
+    localStorage.setItem(localStorageKey, JSON.stringify(a));
+    setAnswer(a);
+  }
+
   React.useEffect(() => {
-    updateChart(answer, wordList, typeList);
+    setFilteredWordList(wordList.filter(v => {
+      if (selectedCategory === 'null') {
+          return (typeof(v.type) === 'undefined')
+      }
+      if (selectedCategory === 'all') return true;
+      if (selectedCategory === v.type) return true;
+      return false;
+    }));
+  }, [wordList, selectedCategory]);
+
+  React.useEffect(() => {
+    if (renderTimeout.current) {
+      clearTimeout(renderTimeout.current);
+    }
+    renderTimeout.current = setTimeout(() => {
+      updateChart(answer, wordList, typeList);
+      renderTimeout.current = null;
+    }, 1000);
   }, [answer, wordList, typeList]);
 
   React.useEffect(() => {
@@ -253,16 +285,41 @@ export default function({
     }
   }, []);
 
+  React.useEffect(() => {
+    const listnerKeydown = (e) => {
+      const findWord = (word, d) => {
+        if (filteredWordList.length == 0) return null;
+        let index = filteredWordList.findIndex( w => w.word === word);
+        index += d;
+        if (index < 0) index = filteredWordList.length-1;
+        if (index >= filteredWordList.length) index = 0;
+        return filteredWordList[index].word;
+        
+      }
+      if (e.code === 'ArrowRight') {
+        e.preventDefault();
+        setSelectedCard(findWord(selectedCard,  1));
+      }
+      if (e.code === 'ArrowLeft') {
+        e.preventDefault();
+        setSelectedCard(findWord(selectedCard, -1));
+      }
+      if (e.code === 'Space') {
+        e.preventDefault();
+        checkWord(selectedCard);
+        setSelectedCard(findWord(selectedCard,  1));
+      }
+    }
+    window.addEventListener('keydown', listnerKeydown)
+    return () => {
+      window.removeEventListener('keydown', listnerKeydown);
+    }
+  }, [filteredWordList, selectedCard, answer]);
+
   const onSelectHandler = (item) => {
     return (e) => {
-      const a = { ...answer };
-      if (!a[item.word]) {
-        a[item.word] = 1;
-      } else {
-        a[item.word] = 0;
-      }
-      localStorage.setItem(localStorageKey, JSON.stringify(a));
-      setAnswer(a);
+      setSelectedCard(item.word);
+      checkWord(item.word);
     }
   }
 
@@ -366,16 +423,18 @@ export default function({
           </div>
         </div>
       </div>
-      <p className="select-none text-center font-bold text-gray-700 my-4">知っている単語のカードをクリックしてチェック！</p>
+      <p className="select-none text-center font-bold text-gray-700 mt-4">知っている単語のカードをクリックしてチェック！</p>
+      <div className="block text-center text-gray-700 font-bold">({ wordList.reduce( (a,v) => (answer[v.word] === 1 ? a+1: a) , 0) } Point) </div>
       <div className="grid grid-cols-3 sm:grid-cols-5 md:grid-cols-7 lg:grid-cols-9 xl:grid-cols-10 gap-0 justify-items-center">
         <WordList
-          wordList={wordList}
+          wordList={filteredWordList}
           category={selectedCategory}
           categoryLabels={typeList.reduce((a, c) => {a[c.type] = c.label;return a;}, {})}
           answer={answer}
           onSelectHandler={onSelectHandler}
           colors={colors}
           subkeyword={subkeyword}
+          selectedCard={selectedCard}
         />
       </div>
     </Container>

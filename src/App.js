@@ -68,9 +68,9 @@ function App() {
             wordList={datascienceData.word}
             typeList={datascienceData.type}
             colors={{
-              cardBG: 'bg-green-200',
-              headerBG: 'bg-green-500',
-              selectBG: 'bg-green-400',
+              card: 'green-200',
+              header: 'green-500',
+              select: 'green-400',
               checkMark: '#48BB78',
             }}
             subkeyword="データサイエンス"
@@ -83,9 +83,9 @@ function App() {
             wordList={webtechnologyData.word}
             typeList={webtechnologyData.type}
             colors={{
-              cardBG: 'bg-orange-200',
-              headerBG: 'bg-orange-500',
-              selectBG: 'bg-orange-400',
+              card: 'orange-200',
+              header: 'orange-500',
+              select: 'orange-400',
               checkMark: '#ED8936',
             }}
             subkeyword="Web技術"
