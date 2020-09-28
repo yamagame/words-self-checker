@@ -197,8 +197,8 @@ export default function({
         datasets: [{
           data: resultData.data,
           borderWidth: 4,
-          backgroundColor: '#33A2E940',
-          borderColor: '#33A2E9',
+          backgroundColor: `${colors.checkMark}40`,
+          borderColor: colors.checkMark,
           pointBorderWidth: 2,
           pointHoverBorderWidth: 2,
           pointBorderColor: 'white',
