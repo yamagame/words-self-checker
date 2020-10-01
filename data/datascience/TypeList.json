@@ -1,7 +1,7 @@
 [
   { "label": "一般", "type": "general" },
-  { "label": "基礎", "type": "basic" },
-  { "label": "数学", "type": "math" },
-  { "label": "回帰", "type": "regres" },
-  { "label": "分類", "type": "class" }
+  { "label": "統計1", "type": "stat" },
+  { "label": "統計2", "type": "stat2" },
+  { "label": "統計3", "type": "stat3" },
+  { "label": "機械学習", "type": "ml" }
 ]

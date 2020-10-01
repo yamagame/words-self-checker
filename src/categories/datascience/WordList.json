@@ -1,14 +1,1999 @@
 [
   {
+    "word": "A/Bテスト",
+    "type": "general"
+  },
+  {
+    "word": "AIC",
+    "type": "stat2"
+  },
+  {
+    "word": "ANOVA",
+    "type": "stat2"
+  },
+  {
+    "word": "AUC",
+    "type": "stat2"
+  },
+  {
+    "word": "AlexNet",
+    "type": "ml"
+  },
+  {
+    "word": "AlphaGo",
+    "type": "ml"
+  },
+  {
+    "word": "AlphaGo Zero",
+    "type": "ml"
+  },
+  {
+    "word": "Attention",
+    "type": "ml"
+  },
+  {
+    "word": "BERT",
+    "type": "ml"
+  },
+  {
+    "word": "Bidirectional RNN",
+    "type": "ml"
+  },
+  {
+    "word": "CBOW",
+    "type": "ml"
+  },
+  {
+    "word": "CNN",
+    "type": "ml"
+  },
+  {
+    "word": "CPU",
+    "type": "general"
+  },
+  {
+    "word": "Conditional GAN",
+    "type": "ml"
+  },
+  {
+    "word": "DQN",
+    "type": "ml"
+  },
+  {
+    "word": "ELMo",
+    "type": "ml"
+  },
+  {
+    "word": "F measure",
+    "type": "stat2"
+  },
+  {
+    "word": "FCN",
+    "type": "ml"
+  },
+  {
+    "word": "Fast R-CNN",
+    "type": "ml"
+  },
+  {
+    "word": "Faster R-CNN",
+    "type": "ml"
+  },
+  {
+    "word": "F値",
+    "type": "stat2"
+  },
+  {
+    "word": "F分布",
+    "type": "stat2"
+  },
+  {
+    "word": "F比",
+    "type": "stat2"
+  },
+  {
+    "word": "F統計量",
+    "type": "stat2"
+  },
+  {
+    "word": "GAN",
+    "type": "ml"
+  },
+  {
+    "word": "GLM",
+    "type": "ml"
+  },
+  {
+    "word": "GPU",
+    "type": "general"
+  },
+  {
+    "word": "GRU",
+    "type": "ml"
+  },
+  {
+    "word": "Global Average Pooling",
+    "type": "ml"
+  },
+  {
+    "word": "GoogLeNet",
+    "type": "ml"
+  },
+  {
+    "word": "Gower距離",
+    "type": "stat2"
+  },
+  {
+    "word": "Heの初期値",
+    "type": "ml"
+  },
+  {
+    "word": "Inceptionモジュール",
+    "type": "ml"
+  },
+  {
+    "word": "L1正則化",
+    "type": "ml"
+  },
+  {
+    "word": "L2正則化",
+    "type": "ml"
+  },
+  {
+    "word": "LSGAN",
+    "type": "ml"
+  },
+  {
+    "word": "LSTM",
+    "type": "ml"
+  },
+  {
+    "word": "LeNet",
+    "type": "ml"
+  },
+  {
+    "word": "MLPネットワーク",
+    "type": "ml"
+  },
+  {
+    "word": "NLP",
+    "type": "ml"
+  },
+  {
+    "word": "NTM",
+    "type": "stat2"
+  },
+  {
+    "word": "Nullモデル",
+    "type": "stat2"
+  },
+  {
+    "word": "Q-Qプロット",
+    "type": "stat2"
+  },
+  {
+    "word": "Q学習",
+    "type": "ml"
+  },
+  {
+    "word": "R-CNN",
+    "type": "ml"
+  },
+  {
+    "word": "RNN",
+    "type": "ml"
+  },
+  {
+    "word": "RNN Encoder-Decoder",
+    "type": "ml"
+  },
+  {
+    "word": "ROC曲線",
+    "type": "ml"
+  },
+  {
+    "word": "ReLU関数",
+    "type": "ml"
+  },
+  {
+    "word": "ResNet",
+    "type": "ml"
+  },
+  {
+    "word": "SSD",
+    "type": "general"
+  },
+  {
+    "word": "SVM",
+    "type": "stat2"
+  },
+  {
+    "word": "Skip connection",
+    "type": "ml"
+  },
+  {
+    "word": "TPU",
+    "type": "general"
+  },
+  {
+    "word": "Transformer",
+    "type": "ml"
+  },
+  {
+    "word": "WaveNet",
+    "type": "ml"
+  },
+  {
+    "word": "Xavierの初期値",
+    "type": "ml"
+  },
+  {
+    "word": "YOLO",
+    "type": "ml"
+  },
+  {
+    "word": "accuracy",
+    "type": "ml"
+  },
+  {
+    "word": "avgプーリング",
+    "type": "ml"
+  },
+  {
+    "word": "early stopping",
+    "type": "ml"
+  },
+  {
+    "word": "fastText",
+    "type": "ml"
+  },
+  {
+    "word": "i.i.d",
+    "type": "stat2"
+  },
+  {
+    "word": "k-means",
+    "type": "stat2"
+  },
+  {
+    "word": "k-分割交差検証",
+    "type": "stat2"
+  },
+  {
+    "word": "k近傍法",
+    "type": "stat2"
+  },
+  {
+    "word": "maxプーリング",
+    "type": "ml"
+  },
+  {
+    "word": "one hot vector",
+    "type": "stat2"
+  },
+  {
+    "word": "precision",
+    "type": "stat2"
+  },
+  {
+    "word": "pハッキング",
+    "type": "stat2"
+  },
+  {
+    "word": "p値",
+    "type": "stat2"
+  },
+  {
+    "word": "recall",
+    "type": "stat2"
+  },
+  {
+    "word": "tanh関数",
+    "type": "stat2"
+  },
+  {
+    "word": "t値",
+    "type": "stat2"
+  },
+  {
+    "word": "t分布",
+    "type": "stat2"
+  },
+  {
+    "word": "t検定",
+    "type": "stat2"
+  },
+  {
+    "word": "word2vec",
+    "type": "ml"
+  },
+  {
+    "word": "アップリフト",
+    "type": "stat2"
+  },
+  {
+    "word": "アルファ",
+    "type": "stat2"
+  },
+  {
+    "word": "アルファ水準",
+    "type": "stat2"
+  },
+  {
+    "word": "アレイ",
+    "type": "general"
+  },
+  {
+    "word": "アンサンブル学習",
+    "type": "ml"
+  },
+  {
+    "word": "アンサンプリング",
+    "type": "stat2"
+  },
+  {
+    "word": "アンダーフィッティング",
+    "type": "ml"
+  },
+  {
+    "word": "イテレーション",
+    "type": "stat2"
+  },
+  {
+    "word": "インスタンスセグメンテーション",
+    "type": "ml"
+  },
+  {
+    "word": "エキスパートシステム",
+    "type": "general"
+  },
+  {
+    "word": "エポック",
+    "type": "ml"
+  },
+  {
+    "word": "エージェントシステム",
+    "type": "general"
+  },
+  {
+    "word": "オッズ",
+    "type": "stat2"
+  },
+  {
+    "word": "オッズ比",
+    "type": "stat2"
+  },
+  {
+    "word": "オントロジー",
+    "type": "general"
+  },
+  {
+    "word": "オートエンコーダ",
+    "type": "ml"
+  },
+  {
+    "word": "オーバーフィッティング",
+    "type": "ml"
+  },
+  {
+    "word": "カイ二乗分布",
+    "type": "stat2"
+  },
+  {
+    "word": "カイ二乗検定",
+    "type": "stat2"
+  },
+  {
+    "word": "カテゴリデータ",
+    "type": "general"
+  },
+  {
+    "word": "カテゴリ型",
+    "type": "general"
+  },
+  {
+    "word": "カーネル",
+    "type": "stat2"
+  },
+  {
+    "word": "カーネルトリック",
+    "type": "stat2"
+  },
+  {
+    "word": "カーネル密度推定",
+    "type": "stat2"
+  },
+  {
+    "word": "カーネル関数",
+    "type": "stat2"
+  },
+  {
+    "word": "クラス",
+    "type": "general"
+  },
+  {
+    "word": "クラスタリング",
+    "type": "general"
+  },
+  {
+    "word": "クロスバリデーション",
+    "type": "stat2"
+  },
+  {
+    "word": "クロス集計表",
+    "type": "general"
+  },
+  {
+    "word": "コーパス",
+    "type": "general"
+  },
+  {
+    "word": "サブサンプリング",
+    "type": "stat2"
+  },
+  {
+    "word": "サポートベクターマシン",
+    "type": "class"
+  },
+  {
+    "word": "サンプリング",
+    "type": "general"
+  },
+  {
+    "word": "サンプル",
+    "type": "general"
+  },
+  {
+    "word": "サンプルサイズ",
+    "type": "stat2"
+  },
+  {
+    "word": "シグモイド関数",
+    "type": "ml"
+  },
+  {
+    "word": "シンボルグラウンディング問題",
+    "type": "ml"
+  },
+  {
+    "word": "シーケンス2シーケンス",
+    "type": "stat2"
+  },
+  {
+    "word": "シーケンス長",
+    "type": "ml"
+  },
+  {
+    "word": "ジェネレータ",
+    "type": "general"
+  },
+  {
+    "word": "スキップグラム",
+    "type": "stat2"
+  },
+  {
+    "word": "スキュー",
+    "type": "stat2"
+  },
+  {
+    "word": "スケーリング",
+    "type": "general"
+  },
+  {
+    "word": "ストライド",
+    "type": "general"
+  },
+  {
+    "word": "スパースデータ",
+    "type": "general"
+  },
+  {
+    "word": "スプライン",
+    "type": "general"
+  },
+  {
+    "word": "スプライン回帰",
+    "type": "stat2"
+  },
+  {
+    "word": "スライシング",
+    "type": "general"
+  },
+  {
+    "word": "スライス",
+    "type": "general"
+  },
+  {
+    "word": "セグネット",
+    "type": "ml"
+  },
+  {
+    "word": "セマンティックセグメンテーション",
+    "type": "ml"
+  },
+  {
+    "word": "ソフトマックス交差エントロピー損失",
+    "type": "ml"
+  },
+  {
+    "word": "ソフトマックス関数",
+    "type": "ml"
+  },
+  {
+    "word": "ダウンサンプリング",
+    "type": "general"
+  },
+  {
+    "word": "ダミー変数",
+    "type": "general"
+  },
+  {
+    "word": "チャンネル",
+    "type": "general"
+  },
+  {
+    "word": "チューリングテスト",
+    "type": "general"
+  },
+  {
+    "word": "テストデータ",
+    "type": "general"
+  },
+  {
     "word": "テンソル",
     "type": "math"
+  },
+  {
+    "word": "テール",
+    "type": "general"
+  },
+  {
+    "word": "ディスクリミネータ",
+    "type": "ml"
+  },
+  {
+    "word": "ディープオートエンコーダ",
+    "type": "ml"
+  },
+  {
+    "word": "デンドログラム",
+    "type": "stat2"
+  },
+  {
+    "word": "データセット",
+    "type": "general"
+  },
+  {
+    "word": "データマイニング",
+    "type": "general"
+  },
+  {
+    "word": "トイ・プロブレム",
+    "type": "general"
+  },
+  {
+    "word": "トリム平均",
+    "type": "stat2"
+  },
+  {
+    "word": "トークン",
+    "type": "general"
+  },
+  {
+    "word": "ドロップアウト",
+    "type": "ml"
+  },
+  {
+    "word": "ナイーブベイズ",
+    "type": "stat2"
+  },
+  {
+    "word": "ナレッジシステム",
+    "type": "general"
+  },
+  {
+    "word": "ニューラルチューリングマシン",
+    "type": "ml"
+  },
+  {
+    "word": "ニューラルネットワーク",
+    "type": "ml"
+  },
+  {
+    "word": "ニューロン",
+    "type": "ml"
+  },
+  {
+    "word": "ネオコグニトロン",
+    "type": "ml"
+  },
+  {
+    "word": "ネットワーク",
+    "type": "general"
+  },
+  {
+    "word": "ノンパラメトリックなモデル",
+    "type": "stat2"
+  },
+  {
+    "word": "ノード",
+    "type": "general"
+  },
+  {
+    "word": "ノーフリーランチ定理",
+    "type": "ml"
+  },
+  {
+    "word": "ハイパーパラメータ",
+    "type": "stat2"
+  },
+  {
+    "word": "バイアス",
+    "type": "stat2"
+  },
+  {
+    "word": "バイオリンプロット",
+    "type": "stat2"
+  },
+  {
+    "word": "バイナリデータ",
+    "type": "general"
+  },
+  {
+    "word": "バイナリ交差エントロピー損失",
+    "type": "stat2"
+  },
+  {
+    "word": "バギング",
+    "type": "stat2"
+  },
+  {
+    "word": "バックプロパゲーション",
+    "type": "ml"
+  },
+  {
+    "word": "バッチサイズ",
+    "type": "ml"
+  },
+  {
+    "word": "バッチ正規化",
+    "type": "stat2"
+  },
+  {
+    "word": "バーニーおじさんのルール",
+    "type": "stat2"
+  },
+  {
+    "word": "パディング",
+    "type": "stat2"
+  },
+  {
+    "word": "パラメタ",
+    "type": "general"
+  },
+  {
+    "word": "パラメトリックなモデル",
+    "type": "stat2"
+  },
+  {
+    "word": "パーセント点",
+    "type": "stat2"
+  },
+  {
+    "word": "ヒストグラム",
+    "type": "general"
+  },
+  {
+    "word": "ピアソンの積率相関係数",
+    "type": "stat2"
+  },
+  {
+    "word": "ファインチューニング",
+    "type": "ml"
+  },
+  {
+    "word": "フレーム問題",
+    "type": "ml"
+  },
+  {
+    "word": "ブースティング",
+    "type": "stat2"
+  },
+  {
+    "word": "ブートストラップサンプリング",
+    "type": "stat2"
+  },
+  {
+    "word": "プラトー",
+    "type": "stat2"
+  },
+  {
+    "word": "プロット",
+    "type": "general"
+  },
+  {
+    "word": "プロファイリング",
+    "type": "general"
+  },
+  {
+    "word": "プーリング層",
+    "type": "ml"
+  },
+  {
+    "word": "ベイズの定理",
+    "type": "stat2"
+  },
+  {
+    "word": "ベイズ主義",
+    "type": "stat2"
+  },
+  {
+    "word": "ベイズ推定",
+    "type": "stat2"
+  },
+  {
+    "word": "ベイズ統計学",
+    "type": "stat2"
   },
   {
     "word": "ベクトル",
     "type": "math"
   },
   {
+    "word": "ベクトル空間モデル",
+    "type": "stat2"
+  },
+  {
+    "word": "ベルヌーイ分布",
+    "type": "stat2"
+  },
+  {
+    "word": "ベルヌーイ試行",
+    "type": "stat2"
+  },
+  {
+    "word": "ベン図",
+    "type": "general"
+  },
+  {
+    "word": "ペアプロット",
+    "type": "general"
+  },
+  {
+    "word": "ホールドアウト検証",
+    "type": "stat2"
+  },
+  {
+    "word": "ボックスプロット",
+    "type": "general"
+  },
+  {
+    "word": "ポアソン分布",
+    "type": "stat2"
+  },
+  {
+    "word": "ポアソン回帰",
+    "type": "stat2"
+  },
+  {
+    "word": "マルチタスク言語モデル",
+    "type": "ml"
+  },
+  {
+    "word": "マージン最大化",
+    "type": "stat2"
+  },
+  {
+    "word": "ミニバッチ",
+    "type": "ml"
+  },
+  {
+    "word": "モデリング",
+    "type": "general"
+  },
+  {
+    "word": "モデル",
+    "type": "general"
+  },
+  {
+    "word": "モデルベースクラスタリング",
+    "type": "stat2"
+  },
+  {
+    "word": "モンテカルロ木探索",
+    "type": "stat2"
+  },
+  {
+    "word": "モード",
+    "type": "general"
+  },
+  {
+    "word": "モーメンタム",
+    "type": "stat2"
+  },
+  {
+    "word": "ユークリッド距離",
+    "type": "general"
+  },
+  {
+    "word": "ラッソ回帰",
+    "type": "ml"
+  },
+  {
+    "word": "ランダム",
+    "type": "general"
+  },
+  {
+    "word": "ランダムフォレスト",
+    "type": "stat2"
+  },
+  {
+    "word": "リカレントニューラルネットワーク",
+    "type": "ml"
+  },
+  {
+    "word": "リスト",
+    "type": "general"
+  },
+  {
+    "word": "リッジ回帰",
+    "type": "ml"
+  },
+  {
+    "word": "リフト",
+    "type": "stat2"
+  },
+  {
+    "word": "リンク関数",
+    "type": "stat2"
+  },
+  {
+    "word": "レバレッジ",
+    "type": "stat2"
+  },
+  {
+    "word": "ロジスティック回帰",
+    "type": "stat2"
+  },
+  {
+    "word": "ロジット",
+    "type": "stat3"
+  },
+  {
+    "word": "ロジット関数",
+    "type": "stat2"
+  },
+  {
+    "word": "ロングテール分布",
+    "type": "stat3"
+  },
+  {
+    "word": "ワイブル分布",
+    "type": "stat2"
+  },
+  {
+    "word": "一元ANOVA",
+    "type": "stat3"
+  },
+  {
+    "word": "一元配置分散分析",
+    "type": "stat2"
+  },
+  {
+    "word": "一致性",
+    "type": "stat3"
+  },
+  {
+    "word": "一般化加法モデル",
+    "type": "stat3"
+  },
+  {
+    "word": "一般化線形モデル",
+    "type": "stat3"
+  },
+  {
+    "word": "上側信頼限界",
+    "type": "stat3"
+  },
+  {
+    "word": "下側信頼限界",
+    "type": "stat2"
+  },
+  {
+    "word": "下側確率",
+    "type": "stat3"
+  },
+  {
+    "word": "不偏分散",
+    "type": "stat2"
+  },
+  {
+    "word": "不偏性",
+    "type": "general"
+  },
+  {
+    "word": "不等分散性",
+    "type": "stat3"
+  },
+  {
+    "word": "両側検定",
+    "type": "stat2"
+  },
+  {
+    "word": "中央値絶対偏差",
+    "type": "stat3"
+  },
+  {
+    "word": "中心極限定理",
+    "type": "stat3"
+  },
+  {
+    "word": "主成分分析",
+    "type": "stat3"
+  },
+  {
+    "word": "主観確率",
+    "type": "stat2"
+  },
+  {
+    "word": "乖離",
+    "type": "general"
+  },
+  {
+    "word": "乱数",
+    "type": "general"
+  },
+  {
+    "word": "予測制度",
+    "type": "stat3"
+  },
+  {
+    "word": "事前学習",
+    "type": "ml"
+  },
+  {
+    "word": "事前確率",
+    "type": "stat2"
+  },
+  {
+    "word": "事後確率",
+    "type": "stat3"
+  },
+  {
+    "word": "事象",
+    "type": "general"
+  },
+  {
+    "word": "事象が独立",
+    "type": "stat2"
+  },
+  {
+    "word": "二値確率変数",
+    "type": "stat3"
+  },
+  {
+    "word": "二元ANOVA"
+  },
+  {
+    "word": "二元配置分散分析",
+    "type": "stat3"
+  },
+  {
+    "word": "二項分布",
+    "type": "stat3"
+  },
+  {
+    "word": "交差検証",
+    "type": "stat2"
+  },
+  {
+    "word": "交差検証法",
+    "type": "stat3"
+  },
+  {
+    "word": "代表値",
+    "type": "general"
+  },
+  {
+    "word": "係数",
+    "type": "general"
+  },
+  {
+    "word": "信頼係数",
+    "type": "stat2"
+  },
+  {
+    "word": "信頼区間",
+    "type": "stat3"
+  },
+  {
+    "word": "信頼限界",
+    "type": "stat3"
+  },
+  {
+    "word": "偏残差プロット",
+    "type": "stat3"
+  },
+  {
+    "word": "入力層",
+    "type": "ml"
+  },
+  {
+    "word": "全体集合",
+    "type": "stat2"
+  },
+  {
+    "word": "全数調査",
+    "type": "general"
+  },
+  {
+    "word": "全結合",
+    "type": "ml"
+  },
+  {
+    "word": "共分散",
+    "type": "stat3"
+  },
+  {
+    "word": "再現率",
+    "type": "general"
+  },
+  {
+    "word": "出力層",
+    "type": "ml"
+  },
+  {
+    "word": "分割表",
+    "type": "stat2"
+  },
+  {
+    "word": "分布関数",
+    "type": "stat3"
+  },
+  {
+    "word": "分散",
+    "type": "stat2"
+  },
+  {
+    "word": "分散共分散行列",
+    "type": "stat3"
+  },
+  {
+    "word": "分散分析",
+    "type": "stat3"
+  },
+  {
+    "word": "分散分析モデル",
+    "type": "stat3"
+  },
+  {
+    "word": "分散分析表",
+    "type": "stat2"
+  },
+  {
+    "word": "分類",
+    "type": "general"
+  },
+  {
+    "word": "切片",
+    "type": "general"
+  },
+  {
+    "word": "利得",
+    "type": "general"
+  },
+  {
+    "word": "制限付きボルツマンマシン",
+    "type": "ml"
+  },
+  {
+    "word": "加重中央値",
+    "type": "stat3"
+  },
+  {
+    "word": "加重平均",
+    "type": "stat2"
+  },
+  {
+    "word": "効果",
+    "type": "general"
+  },
+  {
+    "word": "勾配消失問題",
+    "type": "ml"
+  },
+  {
+    "word": "勾配降下法",
+    "type": "ml"
+  },
+  {
+    "word": "区間推定",
+    "type": "stat3"
+  },
+  {
+    "word": "単純パーセプトロン",
+    "type": "ml"
+  },
+  {
+    "word": "単純ランダムサンプリング",
+    "type": "stat3"
+  },
+  {
+    "word": "単純化",
+    "type": "general"
+  },
+  {
+    "word": "単語埋め込みモデル",
+    "type": "ml"
+  },
+  {
+    "word": "危険率",
+    "type": "general"
+  },
+  {
+    "word": "名義尺度",
+    "type": "general"
+  },
+  {
+    "word": "和事象",
+    "type": "general"
+  },
+  {
+    "word": "和集合",
+    "type": "general"
+  },
+  {
+    "word": "四分位点",
+    "type": "stat3"
+  },
+  {
+    "word": "回帰",
+    "type": "stat2"
+  },
+  {
+    "word": "回帰モデル",
+    "type": "stat3"
+  },
+  {
+    "word": "回帰係数",
+    "type": "stat3"
+  },
+  {
+    "word": "回帰曲線",
+    "type": "stat3"
+  },
+  {
+    "word": "回帰直線",
+    "type": "stat3"
+  },
+  {
+    "word": "因果律",
+    "type": "stat3"
+  },
+  {
+    "word": "外れ値",
+    "type": "stat3"
+  },
+  {
+    "word": "多クラス分類",
+    "type": "stat3"
+  },
+  {
+    "word": "多変量データ",
+    "type": "stat3"
+  },
+  {
+    "word": "多変量正規分布",
+    "type": "stat3"
+  },
+  {
+    "word": "多層パーセプトロン",
+    "type": "ml"
+  },
+  {
+    "word": "多碗バンディット",
+    "type": "stat3"
+  },
+  {
+    "word": "多重共線性",
+    "type": "stat3"
+  },
+  {
+    "word": "多項式回帰",
+    "type": "stat3"
+  },
+  {
+    "word": "大域最適解",
+    "type": "stat3"
+  },
+  {
+    "word": "大数の法則",
+    "type": "stat3"
+  },
+  {
+    "word": "学習率",
+    "type": "ml"
+  },
+  {
+    "word": "完全畳み込みネットワーク",
+    "type": "ml"
+  },
+  {
+    "word": "定性的",
+    "type": "general"
+  },
+  {
+    "word": "定量的",
+    "type": "general"
+  },
+  {
+    "word": "実数",
+    "type": "general"
+  },
+  {
+    "word": "実現値",
+    "type": "stat3"
+  },
+  {
+    "word": "対応のあるt検定",
+    "type": "stat3"
+  },
+  {
+    "word": "対応のないt検定",
+    "type": "stat3"
+  },
+  {
+    "word": "対数尤度",
+    "type": "stat3"
+  },
+  {
+    "word": "対数関数",
+    "type": "stat3"
+  },
+  {
+    "word": "対立仮説",
+    "type": "stat3"
+  },
+  {
+    "word": "尖度",
+    "type": "stat3"
+  },
+  {
+    "word": "尤度",
+    "type": "stat3"
+  },
+  {
+    "word": "尤度関数",
+    "type": "stat3"
+  },
+  {
+    "word": "局外パラメタ",
+    "type": "stat3"
+  },
+  {
+    "word": "局所最適解",
+    "type": "stat3"
+  },
+  {
+    "word": "差集合",
+    "type": "stat3"
+  },
+  {
+    "word": "帰無仮説",
+    "type": "stat3"
+  },
+  {
+    "word": "平均二乗誤差",
+    "type": "stat3"
+  },
+  {
+    "word": "平均値",
+    "type": "stat3"
+  },
+  {
+    "word": "平均絶対偏差",
+    "type": "stat3"
+  },
+  {
+    "word": "度数",
+    "type": "stat3"
+  },
+  {
+    "word": "度数分布",
+    "type": "stat3"
+  },
+  {
+    "word": "度数分布表",
+    "type": "stat3"
+  },
+  {
+    "word": "弱いAI",
+    "type": "ml"
+  },
+  {
+    "word": "強いAI",
+    "type": "ml"
+  },
+  {
+    "word": "強化学習",
+    "type": "ml"
+  },
+  {
+    "word": "当てはめ制度",
+    "type": "stat3"
+  },
+  {
+    "word": "影響値",
+    "type": "stat3"
+  },
+  {
+    "word": "復元抽出",
+    "type": "stat3"
+  },
+  {
+    "word": "応答変数",
+    "type": "stat3"
+  },
+  {
+    "word": "恒等関数",
+    "type": "stat3"
+  },
+  {
+    "word": "情報量基準",
+    "type": "stat3"
+  },
+  {
+    "word": "意味ネットワーク",
+    "type": "stat3"
+  },
+  {
+    "word": "成功確率",
+    "type": "general"
+  },
+  {
+    "word": "抽象化",
+    "type": "general"
+  },
+  {
+    "word": "指数分布",
+    "type": "stat3"
+  },
+  {
+    "word": "指数型分布族",
+    "type": "stat3"
+  },
+  {
+    "word": "排反事象",
+    "type": "stat3"
+  },
+  {
+    "word": "推定誤差",
+    "type": "stat3"
+  },
+  {
+    "word": "損失関数",
+    "type": "stat3"
+  },
+  {
+    "word": "教師あり学習",
+    "type": "ml"
+  },
+  {
+    "word": "教師なし学習",
+    "type": "ml"
+  },
+  {
+    "word": "散布図",
+    "type": "general"
+  },
+  {
+    "word": "数列",
+    "type": "general"
+  },
+  {
+    "word": "数理モデル",
+    "type": "stat3"
+  },
+  {
+    "word": "整数",
+    "type": "general"
+  },
+  {
+    "word": "整然データ",
+    "type": "general"
+  },
+  {
+    "word": "敵対的ネットワーク",
+    "type": "ml"
+  },
+  {
+    "word": "普遍埋め込みモデル",
+    "type": "ml"
+  },
+  {
+    "word": "曲線下面積",
+    "type": "stat3"
+  },
+  {
+    "word": "最大化対数尤度",
+    "type": "stat3"
+  },
+  {
+    "word": "最小二乗法",
+    "type": "stat3"
+  },
+  {
+    "word": "最尤推定",
+    "type": "stat3"
+  },
+  {
+    "word": "最尤法",
+    "type": "stat3"
+  },
+  {
+    "word": "最適化関数",
+    "type": "stat3"
+  },
+  {
+    "word": "最頻値",
+    "type": "stat3"
+  },
+  {
+    "word": "有意差",
+    "type": "stat"
+  },
+  {
+    "word": "有意水準",
+    "type": "stat"
+  },
+  {
+    "word": "有限母集団修正",
+    "type": "stat"
+  },
+  {
+    "word": "期待値",
+    "type": "stat"
+  },
+  {
+    "word": "期待度数",
+    "type": "stat"
+  },
+  {
+    "word": "条件付き確率",
+    "type": "stat"
+  },
+  {
+    "word": "根元事象",
+    "type": "stat"
+  },
+  {
+    "word": "棒グラフ",
+    "type": "general"
+  },
+  {
+    "word": "検定の多重性",
+    "type": "stat"
+  },
+  {
+    "word": "検定の非対称性",
+    "type": "stat"
+  },
+  {
+    "word": "検証データ",
+    "type": "stat"
+  },
+  {
+    "word": "標本",
+    "type": "stat"
+  },
+  {
+    "word": "標本分散",
+    "type": "stat"
+  },
+  {
+    "word": "標本平均",
+    "type": "stat"
+  },
+  {
+    "word": "標本抽出",
+    "type": "stat"
+  },
+  {
+    "word": "標本点",
+    "type": "stat"
+  },
+  {
+    "word": "標本空間",
+    "type": "stat"
+  },
+  {
+    "word": "標本調査",
+    "type": "stat"
+  },
+  {
+    "word": "標準偏差",
+    "type": "stat"
+  },
+  {
+    "word": "標準化",
+    "type": "stat"
+  },
+  {
+    "word": "標準正規分布",
+    "type": "stat"
+  },
+  {
+    "word": "標準残差",
+    "type": "stat"
+  },
+  {
+    "word": "標準誤差",
+    "type": "stat"
+  },
+  {
+    "word": "機械学習",
+    "type": "ml"
+  },
+  {
+    "word": "次元",
+    "type": "general"
+  },
+  {
+    "word": "正の相関",
+    "type": "stat"
+  },
+  {
+    "word": "正則化",
+    "type": "stat"
+  },
+  {
+    "word": "正準系",
+    "type": "stat"
+  },
+  {
+    "word": "正規分布",
+    "type": "stat"
+  },
+  {
+    "word": "正規化",
+    "type": "stat"
+  },
+  {
+    "word": "正規線形モデル",
+    "type": "stat"
+  },
+  {
+    "word": "正解率",
+    "type": "general"
+  },
+  {
+    "word": "歪度",
+    "type": "stat"
+  },
+  {
+    "word": "残差",
+    "type": "stat"
+  },
+  {
+    "word": "残差平方和",
+    "type": "stat"
+  },
+  {
+    "word": "母分散",
+    "type": "stat"
+  },
+  {
+    "word": "母平均",
+    "type": "stat"
+  },
+  {
+    "word": "母数",
+    "type": "stat"
+  },
+  {
+    "word": "母集団",
+    "type": "stat"
+  },
+  {
+    "word": "母集団分布",
+    "type": "stat"
+  },
+  {
+    "word": "水準",
+    "type": "stat"
+  },
+  {
+    "word": "汎化性能",
+    "type": "stat"
+  },
+  {
+    "word": "汎化誤差",
+    "type": "stat"
+  },
+  {
+    "word": "決定係数",
+    "type": "stat"
+  },
+  {
+    "word": "決定木",
+    "type": "stat"
+  },
+  {
+    "word": "活性化関数",
+    "type": "stat"
+  },
+  {
+    "word": "深層信念ネットワーク",
+    "type": "ml"
+  },
+  {
+    "word": "深層強化学習",
+    "type": "ml"
+  },
+  {
+    "word": "深層生成モデル",
+    "type": "ml"
+  },
+  {
+    "word": "混同行列",
+    "type": "stat"
+  },
+  {
+    "word": "点推定",
+    "type": "stat"
+  },
+  {
+    "word": "無相関",
+    "type": "stat"
+  },
+  {
+    "word": "片側検定",
+    "type": "stat"
+  },
+  {
+    "word": "特徴表現学習",
+    "type": "ml"
+  },
+  {
+    "word": "生成タスク",
+    "type": "ml"
+  },
+  {
+    "word": "畳み込みニューラルネットワーク",
+    "type": "ml"
+  },
+  {
+    "word": "畳み込み層",
+    "type": "ml"
+  },
+  {
+    "word": "白色化",
+    "type": "ml"
+  },
+  {
+    "word": "相対エントロピー",
+    "type": "stat"
+  },
+  {
+    "word": "相対度数",
+    "type": "stat"
+  },
+  {
+    "word": "相関係数",
+    "type": "stat"
+  },
+  {
+    "word": "相関行列",
+    "type": "stat"
+  },
+  {
+    "word": "確率",
+    "type": "general"
+  },
+  {
+    "word": "確率の乗法定理",
+    "type": "stat"
+  },
+  {
+    "word": "確率の加法定理",
+    "type": "stat"
+  },
+  {
+    "word": "確率モデル",
+    "type": "stat"
+  },
+  {
+    "word": "確率分布",
+    "type": "stat"
+  },
+  {
+    "word": "確率変数",
+    "type": "stat"
+  },
+  {
+    "word": "確率密度",
+    "type": "stat"
+  },
+  {
+    "word": "確率密度関数",
+    "type": "stat"
+  },
+  {
+    "word": "確率質量関数",
+    "type": "stat"
+  },
+  {
+    "word": "積事象",
+    "type": "stat"
+  },
+  {
+    "word": "積層オートエンコーダ",
+    "type": "ml"
+  },
+  {
+    "word": "積集合",
+    "type": "stat"
+  },
+  {
+    "word": "空事象",
+    "type": "stat"
+  },
+  {
+    "word": "空集合",
+    "type": "stat"
+  },
+  {
+    "word": "第一種の過誤",
+    "type": "stat"
+  },
+  {
+    "word": "第二種の過誤",
+    "type": "stat"
+  },
+  {
+    "word": "等差数列",
+    "type": "stat"
+  },
+  {
+    "word": "算術平均",
+    "type": "stat"
+  },
+  {
+    "word": "箱髭図",
+    "type": "stat"
+  },
+  {
+    "word": "累積分布関数",
+    "type": "stat"
+  },
+  {
+    "word": "累積度数",
+    "type": "stat"
+  },
+  {
+    "word": "累積相対度数",
+    "type": "stat"
+  },
+  {
+    "word": "統計モデル",
+    "type": "stat"
+  },
+  {
+    "word": "統計的仮説検定",
+    "type": "stat"
+  },
+  {
+    "word": "統計的自然言語処理",
+    "type": "stat"
+  },
+  {
+    "word": "統計量",
+    "type": "stat"
+  },
+  {
+    "word": "線形モデル",
+    "type": "stat"
+  },
+  {
+    "word": "線形予測子",
+    "type": "stat"
+  },
+  {
+    "word": "線形回帰",
+    "type": "stat"
+  },
+  {
+    "word": "群内変動",
+    "type": "stat"
+  },
+  {
+    "word": "群間変動"
+  },
+  {
+    "word": "自己符号化器",
+    "type": "ml"
+  },
+  {
+    "word": "自然数",
+    "type": "general"
+  },
+  {
+    "word": "自然言語処理",
+    "type": "general"
+  },
+  {
+    "word": "自由度",
+    "type": "stat"
+  },
+  {
+    "word": "虚数",
+    "type": "general"
+  },
+  {
     "word": "行列",
     "type": "math"
+  },
+  {
+    "word": "補集合",
+    "type": "stat"
+  },
+  {
+    "word": "複合事象"
+  },
+  {
+    "word": "要素",
+    "type": "general"
+  },
+  {
+    "word": "観測度数",
+    "type": "stat"
+  },
+  {
+    "word": "訓練データ",
+    "type": "ml"
+  },
+  {
+    "word": "試行",
+    "type": "general"
+  },
+  {
+    "word": "認識タスク",
+    "type": "stat"
+  },
+  {
+    "word": "誤差",
+    "type": "general"
+  },
+  {
+    "word": "誤差逆伝播学習法",
+    "type": "ml"
+  },
+  {
+    "word": "誤差関数",
+    "type": "stat"
+  },
+  {
+    "word": "説明変数",
+    "type": "stat"
+  },
+  {
+    "word": "識別",
+    "type": "general"
+  },
+  {
+    "word": "識別タスク",
+    "type": "ml"
+  },
+  {
+    "word": "負の二項分布",
+    "type": "stat"
+  },
+  {
+    "word": "負の相関",
+    "type": "stat"
+  },
+  {
+    "word": "赤池の情報量基準",
+    "type": "stat"
+  },
+  {
+    "word": "転移学習",
+    "type": "ml"
+  },
+  {
+    "word": "連続データ",
+    "type": "general"
+  },
+  {
+    "word": "連続型",
+    "type": "general"
+  },
+  {
+    "word": "過分散",
+    "type": "stat"
+  },
+  {
+    "word": "過学習",
+    "type": "ml"
+  },
+  {
+    "word": "適合率",
+    "type": "general"
+  },
+  {
+    "word": "重み",
+    "type": "ml"
+  },
+  {
+    "word": "重回帰モデル",
+    "type": "stat"
+  },
+  {
+    "word": "重回帰分析",
+    "type": "stat"
+  },
+  {
+    "word": "階層クラスタリング",
+    "type": "stat"
+  },
+  {
+    "word": "階級",
+    "type": "general"
+  },
+  {
+    "word": "階級値",
+    "type": "general"
+  },
+  {
+    "word": "隠れ層",
+    "type": "ml"
+  },
+  {
+    "word": "集合",
+    "type": "stat"
+  },
+  {
+    "word": "雑然データ",
+    "type": "general"
+  },
+  {
+    "word": "離散データ",
+    "type": "general"
+  },
+  {
+    "word": "離散型",
+    "type": "stat"
+  },
+  {
+    "word": "非復元抽出",
+    "type": "stat"
+  },
+  {
+    "word": "非正規残差",
+    "type": "stat"
+  },
+  {
+    "word": "非線型モデル",
+    "type": "stat"
+  },
+  {
+    "word": "鞍点",
+    "type": "ml"
+  },
+  {
+    "word": "順序尺度",
+    "type": "stat"
+  },
+  {
+    "word": "順序尺度データ",
+    "type": "stat"
+  },
+  {
+    "word": "頻度主義",
+    "type": "stat"
+  },
+  {
+    "word": "２値分類",
+    "type": "stat"
   }
 ]
